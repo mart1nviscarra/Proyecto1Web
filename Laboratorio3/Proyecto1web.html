@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultas Médicas</title>
+<link rel="stylesheet" href="Estilo.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>Consultas Medicas</h1>
+</header>
+
+<nav class="nav_lista">
+  <a href="#inicio">Inicio</a>
+  <a href="#caracteristicas">Características</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+  <section class="features" id="caracteristicas">
+    <h2>Características del proyecto</h2>
+    <p>Estas son las funcionalidades principales que facilitan la consultas medicas.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Agendar citas</h3>
+        <p>Crear un agenda para citas de medicamentos.</p>
+      </div>
+      <div class="card">
+        <h3>Historial clínico digital</h3>
+        <p>Guarda diagnósticos, tratamientos y otros datos de consultas.</p>
+      </div>
+      <div class="card">
+        <h3>Consultas médicas</h3>
+        <p>Realiza consultas médicas a través de un sistema de chat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o sugerencias sobre el proyecto? Completa el formulario.</p>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar mensaje</button>
+    </form>
+  </section>
+</main>
+
+<p class="caption">Resumen de las unidades del curso aplicadas al proyecto</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Unidad</th>
+      <th>Contenido aplicado</th>
+      <th>Resultado en el proyecto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unidad 1</td>
+      <td>Estructura HTML5 semántica</td>
+      <td>Header, nav, main, sections y footer bien definidos</td>
+    </tr>
+    <tr>
+      <td>Unidad 2</td>
+      <td>Estilos con CSS</td>
+      <td>Paleta de color, tipografía y diseño responsivo</td>
+    </tr>
+    <tr>
+      <td>Unidad 3</td>
+      <td>Formularios e interacción</td>
+      <td>Formulario de contacto validado con HTML5</td>
+    </tr>
+  </tbody>
+</table>
+
+<button id="boton-tema" class="modo-oscuro">Tema</button>
+<p class="saludo" id="saludo"></p>
+
+
+<button id="boton-aumentar">Aumentar</button>
+<button id="boton-reducir">Reducir</button> 
+
+
+</body>
+</html>
