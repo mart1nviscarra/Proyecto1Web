@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block titulo %}
+    Productos
+{% endblock %}
+{% block contenido %}
+<h2>Productos disponibles</h2>
+<ul>
+    {% for p in productos %}
+        <li>
+            <strong>{{ p.nombre }}</strong>
+            — {{ p.categoria.nombre }}
+            — ${{ p.precio }}
+            {% if p.stock == 0 %}
+                <em>(sin stock)</em>
+            {% endif %}
+            <a href="{% url 'producto_detalle' p.id %}">
+                Ver detalle
+            </a>
+        </li>
+    {% empty %}
+        <li>
+            No hay productos cargados todavía.
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
